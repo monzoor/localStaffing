@@ -1,3 +1,53 @@
-#navL {
-  font-size: $h5-fontsize;
+nav {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  @media #{$large-and-up} {
+    background-color: transparent;
+  }
+  .icon-orb {
+    color: #0841BE; // TODO
+    margin: 0;
+    @media #{$large-and-up} {
+      color: #ffffff;
+    }
+    width: 60px;
+    font-size: 24px;
+    line-height: 53px;
+    &:before { content: '\e800'; }
+    &:after {
+      content: '\e801';
+      font-size: 7.5px;
+      position: relative;
+      top: 12px;
+      left: -25px;
+      color: #FC3F73; // TODO
+      width: 52px;
+    }
+  }
+  .material-icons {
+    color: #124EC2; // TODO
+  }
+  ul {
+    a {
+      font-size: $h4-fontsize;
+      &.btn {
+        font-size: $h4-fontsize;
+      }
+    }
+  }
+  .tag-line {
+    font-size: $h4-fontsize;
+    float: left;
+    padding-left: 23px;
+    &:before {
+      content: '';
+      border-left: 2px solid white;
+      height: 22px;
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      left: -14px;
+    }
+  }
 }

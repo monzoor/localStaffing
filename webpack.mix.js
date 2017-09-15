@@ -17,5 +17,9 @@ const { mix } = require('laravel-mix');
 mix.sass('components/scss/main.scss', 'dist/css')
    .scripts([
     'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/materialize-css/dist/js/materialize.min.js'
-    ], 'dist/js/main.js');
+    'node_modules/materialize-css/dist/js/materialize.min.js',
+    'components/js/common.js'
+  ], 'dist/js/main.js')
+
+   .copy('components/fonts', 'dist/fonts')
+   .copy('components/images', 'dist/images')

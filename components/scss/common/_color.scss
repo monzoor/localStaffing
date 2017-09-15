@@ -94,10 +94,10 @@ $indigo: (
   "darken-2":   #303f9f,
   "darken-3":   #283593,
   "darken-4":   #1a237e,
-  "accent-1":    #8c9eff,
-  "accent-2":    #536dfe,
-  "accent-3":    #3d5afe,
-  "accent-4":    #304ffe
+  "accent-1":   #8c9eff,
+  "accent-2":   #536dfe,
+  "accent-3":   #3d5afe,
+  "accent-4":   #304ffe
 );
 
 $blue: (
@@ -111,10 +111,10 @@ $blue: (
   "darken-2":   #1976D2,
   "darken-3":   #1565C0,
   "darken-4":   #0D47A1,
-  "accent-1":    #82B1FF,
-  "accent-2":    #448AFF,
-  "accent-3":    #2979FF,
-  "accent-4":    #2962FF
+  "accent-1":   #82B1FF,
+  "accent-2":   #448AFF,
+  "accent-3":   #2979FF,
+  "accent-4":   #2962FF
 );
 
 $light-blue: (
@@ -404,4 +404,3 @@ $colors: (
   @warn "Unknown `#{name}` in $colors.";
   @return null;
 }
-

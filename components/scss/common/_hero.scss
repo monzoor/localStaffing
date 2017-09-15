@@ -1,0 +1,10 @@
+.hero {
+  height: 100vh;
+	background: url('data:image/svg+xml;utf8,<svg version="1.1" viewBox="0 0 1430 620" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Sketch.</desc><defs><linearGradient id="b" x1="37.093%" x2="50%" y1="18.063%" y2="103.07%"><stop stop-color="#124EC2" offset="0"/><stop stop-color="#003292" offset="1"/></linearGradient><path id="a" d="m1.819e-12 0h1430v369.3s-74.932 0-243.71 19.283c-578.25 66.063-998.89 225.8-998.89 225.8-52.176 18.09-105.94-10.517-120.08-63.915l-67.314-254.07v-296.4z"/></defs><g fill="none" fill-rule="evenodd"><mask fill="white"><use xlink:href="#a"/></mask><use fill="url(#b)" xlink:href="#a"/></g></svg>')  no-repeat;
+  background-size: 100%;
+  position: relative;;
+  z-index: 1;
+  @media #{$large-and-up} {
+    margin-top: -64px;
+  }
+}

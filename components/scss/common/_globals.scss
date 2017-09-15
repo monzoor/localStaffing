@@ -1,5 +1,5 @@
 body {
-	background-color: $primary-color;
+	background-color: white;
 }
 .row{
 	margin-bottom: 0px;
@@ -27,13 +27,13 @@ body {
   }
 }
 
-.brand-logo{
-  height:100%;
-  img{
-    vertical-align:middle;
-    max-height:45px;
-    @media #{$large-and-up} {
-      width:45%;
-    }
-  }
-}
+// .brand-logo{
+//   height:100%;
+//   img{
+//     vertical-align:middle;
+//     max-height:45px;
+//     @media #{$large-and-up} {
+//       width:45%;
+//     }
+//   }
+// }

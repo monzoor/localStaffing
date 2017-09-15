@@ -11904,7 +11904,7 @@ button.picker__close:focus {
 }
 
 body {
-  background-color: #37474f;
+  background-color: white;
 }
 
 .row {
@@ -11932,21 +11932,6 @@ body {
 @media only screen and (min-width: 993px) {
   .container {
     max-width: 1108px;
-  }
-}
-
-.brand-logo {
-  height: 100%;
-}
-
-.brand-logo img {
-  vertical-align: middle;
-  max-height: 45px;
-}
-
-@media only screen and (min-width: 993px) {
-  .brand-logo img {
-    width: 45%;
   }
 }
 
@@ -13072,9 +13057,97 @@ small {
 .btn,
 .btn-large {
   border-radius: 0;
+  height: auto;
 }
 
-#navL {
-  font-size: 1rem;
+.btn-bd-white {
+  border: 1px solid #ffffff;
+}
+
+.btn-fixed {
+  width: 160px;
+}
+
+nav {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 993px) {
+  nav {
+    background-color: transparent;
+  }
+}
+
+nav .icon-orb {
+  color: #0841BE;
+  margin: 0;
+  width: 60px;
+  font-size: 24px;
+  line-height: 53px;
+}
+
+@media only screen and (min-width: 993px) {
+  nav .icon-orb {
+    color: #ffffff;
+  }
+}
+
+nav .icon-orb:before {
+  content: '\E800';
+}
+
+nav .icon-orb:after {
+  content: '\E801';
+  font-size: 7.5px;
+  position: relative;
+  top: 12px;
+  left: -25px;
+  color: #FC3F73;
+  width: 52px;
+}
+
+nav .material-icons {
+  color: #124EC2;
+}
+
+nav ul a {
+  font-size: 1.2rem;
+}
+
+nav ul a.btn,
+nav ul a.btn-large {
+  font-size: 1.2rem;
+}
+
+nav .tag-line {
+  font-size: 1.2rem;
+  float: left;
+  padding-left: 23px;
+}
+
+nav .tag-line:before {
+  content: '';
+  border-left: 2px solid white;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: -14px;
+}
+
+.hero {
+  height: 100vh;
+  background: url('data:image/svg+xml;utf8,<svg version="1.1" viewBox="0 0 1430 620" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Sketch.</desc><defs><linearGradient id="b" x1="37.093%" x2="50%" y1="18.063%" y2="103.07%"><stop stop-color="#124EC2" offset="0"/><stop stop-color="#003292" offset="1"/></linearGradient><path id="a" d="m1.819e-12 0h1430v369.3s-74.932 0-243.71 19.283c-578.25 66.063-998.89 225.8-998.89 225.8-52.176 18.09-105.94-10.517-120.08-63.915l-67.314-254.07v-296.4z"/></defs><g fill="none" fill-rule="evenodd"><mask fill="white"><use xlink:href="#a"/></mask><use fill="url(#b)" xlink:href="#a"/></g></svg>') no-repeat;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 993px) {
+  .hero {
+    margin-top: -64px;
+  }
 }
 
