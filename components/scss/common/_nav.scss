@@ -6,7 +6,7 @@ nav {
     background-color: transparent;
   }
   .icon-orb {
-    color: #0841BE; // TODO
+    color: $logo-blue; // TODO
     margin: 0;
     @media #{$large-and-up} {
       color: #ffffff;
@@ -17,29 +17,30 @@ nav {
     &:before { content: '\e800'; }
     &:after {
       content: '\e801';
-      font-size: 7.5px;
+      font-size: 9px;
       position: relative;
-      top: 12px;
+      top: 14px;
       left: -25px;
-      color: #FC3F73; // TODO
+      color: $logo-red; // TODO
       width: 52px;
     }
   }
   .material-icons {
-    color: #124EC2; // TODO
+    color: $menu-blue; // TODO
   }
   ul {
     a {
-      font-size: $h4-fontsize;
+      // @extend .text-m;
       &.btn {
-        font-size: $h4-fontsize;
+        // @extend .text-m;
       }
     }
   }
   .tag-line {
-    font-size: $h4-fontsize;
+    @extend .text-m;
     float: left;
     padding-left: 23px;
+    margin-top: 12px;
     &:before {
       content: '';
       border-left: 2px solid white;

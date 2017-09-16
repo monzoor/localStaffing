@@ -30,7 +30,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  // margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
 
@@ -43,7 +43,7 @@
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  // margin-left: .2em;
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -59,16 +59,10 @@
 .icon-orb:before { content: '\e800'; } /* '' */
 .icon-orb-underline:before { content: '\e801'; } /* '' */
 .icon-mail:before { content: '\e802'; } /* '' */
+.icon-choose:before { content: '\e803'; } /* '' */
+.icon-hired:before { content: '\e804'; } /* '' */
+.icon-build:before { content: '\e805'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-facebook-circled:before { content: '\f30d'; } /* '' */
-.icon-linkedin-rect:before { content: '\f312'; } /* '' */
-.icon-orb:before {content: '\e800'; }
-.icon-orb:after {
-  content: '\e801';
-  font-size: 10px;
-  position: absolute;
-  top: 49px;
-  left: 7px;
-  color: #FC3F73;
-}
+.icon-linkedin:before { content: '\f312'; } /* '' */

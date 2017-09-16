@@ -16,4 +16,21 @@ e.data("overlay-id",j).css("z-index",1e3+2*l+1),e.addClass("open"),a("body").app
 ;a(window).off("resize.tapTarget").on("resize.tapTarget",b)},0))}()),"close"==b&&i()})},open:function(){},close:function(){}};a.fn.tapTarget=function(c){if(b[c]||"object"==typeof c)return b.init.apply(this,arguments);a.error("Method "+c+" does not exist on jQuery.tap-target")}}(jQuery);
 (function($) {
   $(".button-collapse").sideNav();
+
+
+  if(window.innerWidth > 992) {
+    $('.carousel').removeClass('carousel-slider')
+    $('.carousel').carousel({
+      dist: 0,
+      padding: 10,
+      indicators: true,
+    });
+  }
+   else {
+     $('.carousel').carousel({
+       indicators: true,
+       fullWidth: true
+     });
+   }
+
 })(window.jQuery);

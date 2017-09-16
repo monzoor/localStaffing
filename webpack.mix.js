@@ -21,5 +21,5 @@ mix.sass('components/scss/main.scss', 'dist/css')
     'components/js/common.js'
   ], 'dist/js/main.js')
 
-   .copy('components/fonts', 'dist/fonts')
+   .copy('components/icons', 'dist/icons')
    .copy('components/images', 'dist/images')

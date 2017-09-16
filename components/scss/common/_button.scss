@@ -1,10 +1,26 @@
+
 .btn {
   border-radius: 0;
   height: auto;
+  &-circle {
+    border-radius: 50%;
+  }
+
   &-bd-white {
     border: 1px solid #ffffff;
   }
+  &-bg-pink {
+    background-color: darken(color("pink", "accent-1"), 15.5%); //TODO
+    &:hover {
+      background-color: darken(color("pink", "accent-1"), 15.5%);
+    }
+  }
   &-fixed {
     width: 160px;
+  }
+  &-pill-l {
+    border-radius: 40px;
+    height: auto;
+    padding: 20px;
   }
 }

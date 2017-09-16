@@ -1,9 +1,37 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 body {
+  line-height: 1.4em;
 	background-color: white;
+
+  // To facilitate consistent footer positioning
+  min-height: 100vh;
+  position: relative;
+  // margin-top: 30px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* ul {
+  margin: 0;
+  padding: 0;
 }
 .row{
 	margin-bottom: 0px;
 	padding:0px;
+
+	@media #{$small-and-down} {
+		margin: 0 !important;
+	}
 	.col{
 		padding: 0 0;
 	}
@@ -12,28 +40,27 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+	padding: 0 $b-space;
+	@include clearfix();
+	@media #{$medium-and-up} {
+		&.container-small {
+			padding: 0 $b-space-xl;
+		}
+	}
 }
 @media #{$medium-and-up} {
   .container {
     max-width: 1108px;
     width:95%;
-
   }
 }
 @media #{$large-and-up} {
   .container {
     max-width: 1108px;
-
   }
 }
 
-// .brand-logo{
-//   height:100%;
-//   img{
-//     vertical-align:middle;
-//     max-height:45px;
-//     @media #{$large-and-up} {
-//       width:45%;
-//     }
-//   }
-// }
+// float
+.fl-none {
+	float: none !important;
+}

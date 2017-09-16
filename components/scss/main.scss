@@ -1,14 +1,17 @@
-// Materialize CSS
-@import "/common/color";
-@import "/common/variables";
+// Jeet
+@import "node_modules/jeet/scss/index";
 // Materialize CSS
 @import "node_modules/materialize-css/sass/materialize";
-@import "/common/globals";
-@import "/common/sizers";
-@import "/common/aligners";
+@import "/common/variables";
 @import "/common/typography";
+@import "/common/sizers";
+@import "/common/globals";
+@import "/common/aligners";
+
 @import "/common/icons";
 @import "/common/button";
 //Content
 @import "/common/nav";
 @import "/common/hero";
+// Pages
+@import "/pages/index";

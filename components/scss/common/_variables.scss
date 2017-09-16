@@ -43,6 +43,20 @@ $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
 
+// TODO
+$logo-blue: #0841BE;
+$logo-red:  #FC3F73;
+
+$menu-blue: #124EC2;
+
+$bg-gradient1: #124EC2;
+$bg-gradient2: #003292;
+
+$icon-blue: $bg-gradient1;
+
+// font color
+$paragraph: #4A4A4A;
+$text-blue: $logo-blue;
 
 // 2. Badges
 // ==========================================================================
@@ -144,7 +158,7 @@ $dropdown-item-height: 50px !default;
 // 9. Fonts
 // ==========================================================================
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
-// $roboto-font-path: "../fonts/roboto/" !default; //TODO 
+// $roboto-font-path: "../fonts/roboto/" !default; //TODO
 $font-family: 'Lato', sans-serif;
 
 
@@ -289,12 +303,20 @@ $toast-text-color: #fff !default;
 
 $off-black: rgba(0, 0, 0, 0.87) !default;
 // Header Styles
-$h1-fontsize: 2.074rem !default;
-$h2-fontsize: 1.728rem !default;
-$h3-fontsize: 1.44rem !default;
-$h4-fontsize: 1.2rem !default;
-$h5-fontsize: 1rem !default;
-$h6-fontsize: 0.833rem !default;
+$baseFontSize : 16;
+
+$h1-fontsize: 46;
+$h2-fontsize: 39;
+$h3-fontsize: 31;
+$h4-fontsize: 25;
+$h5-fontsize: 14;
+$h6-fontsize: 10;
+
+
+$medium: 21;
+$large: 50;
+$xl: 54;
+$xxl: 50;
 
 
 // 21. Footer
