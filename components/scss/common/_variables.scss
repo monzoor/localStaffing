@@ -307,19 +307,35 @@ $off-black: rgba(0, 0, 0, 0.87) !default;
 // Header Styles
 $baseFontSize : 14;
 
-$h1-fontsize: 35;
-$h2-fontsize: 31;
-$h3-fontsize: 25;
-$h4-fontsize: 22;
+$h1-fontsize--m: 35;
+$h2-fontsize--m: 31;
+$h3-fontsize--m: 25;
+$h4-fontsize--m: 22;
+$h5-fontsize--m: 14;
+$h6-fontsize--m: 10;
+
+$small-x--m: 10px;
+$small--m: 16;
+$medium--m: 18;
+$large--m: 40;
+$xl--m: 45;
+$xxl--m: 50;
+
+
+$h1-fontsize: 46;
+$h2-fontsize: 39;
+$h3-fontsize: 31;
+$h4-fontsize: 25;
 $h5-fontsize: 14;
 $h6-fontsize: 10;
 
-$small-x: 10px;
+$small-x: 10;
 $small: 16;
 $medium: 18;
 $large: 40;
 $xl: 45;
-$xxl: 50;
+$xxl: 60;
+
 
 
 // 21. Footer

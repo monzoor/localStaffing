@@ -9862,6 +9862,66 @@ h6,
   line-height: 4.71428571rem;
 }
 
+@media only screen and (min-width: 993px) {
+  h1,
+  .h1 {
+    font-size: 3.28571429rem;
+    line-height: 4.5rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2.78571429rem;
+    line-height: 3.85714286rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 2.21428571rem;
+    line-height: 3.21428571rem;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.78571429rem;
+    line-height: 2.71428571rem;
+  }
+
+  h5,
+  .h5 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  h6,
+  .h6 {
+    font-size: 0.71428571rem;
+    line-height: 1.14285714rem;
+  }
+
+  .text-m,
+  .side-nav li > a,
+  .brand-logo .tag-line {
+    font-size: 1.28571429rem;
+    line-height: 2.42857143rem;
+  }
+
+  .text-l {
+    font-size: 2.85714286rem;
+    line-height: 4.85714286rem;
+  }
+
+  .text-xl {
+    font-size: 3.21428571rem;
+    line-height: 5.21428571rem;
+  }
+
+  .text-xxl {
+    font-size: 4.28571429rem;
+    line-height: 5.78571429rem;
+  }
+}
+
 em {
   font-style: italic;
 }
@@ -11026,6 +11086,12 @@ nav .btn-large {
   line-height: 48px;
 }
 
+@media only screen and (min-width: 993px) {
+  .brand-logo {
+    margin-top: -6px;
+  }
+}
+
 .brand-logo .icon-orb {
   color: #0841BE;
   margin: 0;
@@ -11140,7 +11206,7 @@ nav .btn-large {
   }
 
   .footer-nav .links > li:first-child {
-    margin: 0 25% 0 0;
+    margin: 0 20% 0 0;
   }
 }
 
@@ -11387,6 +11453,7 @@ nav .btn-large {
 @media only screen and (min-width: 993px) {
   .about-us ul {
     width: 900px;
+    overflow: hidden;
   }
 }
 

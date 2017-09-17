@@ -35,6 +35,10 @@ nav {
   }
 }
 .brand-logo {
+
+  @media #{$large-and-up} {
+    margin-top: -6px;
+  }
   .icon-orb {
     color: $logo-blue; // TODO
     margin: 0;
