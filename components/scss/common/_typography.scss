@@ -32,12 +32,9 @@
 html {
   font-family: $font-family;
 	font: baseFontSize($baseFontSize); // 14px/24px
-  @media #{$medium-and-down} {
-    font: baseFontSize($baseFontSize - 2); // 12px/22px
-  }
-  @media #{$small-and-down} {
-    font: baseFontSize($baseFontSize - 4); // 10px/20px
-  }
+  // @media #{$medium-and-up} {
+  //   font: baseFontSize($baseFontSize + 2); // 16px/26px
+  // }
 }
 
 
@@ -48,25 +45,28 @@ html {
 
 // Header Styles
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-
-h1,h2,h3,h4,h5,h6,p { margin: 0; }
-h1,.h1 { font-size: rem($h1-fontsize); line-height: rem(63); }
-h2,.h2 { font-size: rem($h2-fontsize); line-height: rem(54); }
-h3,.h3 { font-size: rem($h3-fontsize); line-height: rem(45); }
-h4,.h4 { font-size: rem($h4-fontsize); line-height: rem(38); }
-h5,.h5 { font-size: rem($h5-fontsize); line-height: rem(28); }
-h6,.h6 { font-size: rem($h6-fontsize); line-height: rem(16); }
-
-.text-m { font-size: rem($medium); line-height: rem(34); }
-.text-l { font-size: rem($large); line-height: rem(68); }
-.text-xl { font-size: rem($xl); line-height: rem(73); }
-.text-xxl { font-size: rem($xxl); line-height: rem(81); }
-
 p{
 	font: baseFontSize($baseFontSize);
 	margin: 0 0 10px 0;
 	color: $paragraph;
 }
+
+h1,h2,h3,h4,h5,h6,p { margin: 0; }
+h1,.h1 { font-size: rem($h1-fontsize); line-height: rem(47); }
+h2,.h2 { font-size: rem($h2-fontsize); line-height: rem(42); }
+h3,.h3 { font-size: rem($h3-fontsize); line-height: rem(35); }
+h4,.h4 { font-size: rem($h4-fontsize); line-height: rem(31); }
+h5,.h5 { font-size: rem($h5-fontsize); line-height: rem(28); }
+h6,.h6 { font-size: rem($h6-fontsize); line-height: rem(16); }
+
+.text-xs { font-size: rem($small-x); line-height: rem(14); }
+.text-s { font-size: rem($small); line-height: rem(24); }
+.text-m { font-size: rem($medium); line-height: rem(26); }
+.text-l { font-size: rem($large); line-height: rem(54); }
+.text-xl { font-size: rem($xl); line-height: rem(60); }
+.text-xxl { font-size: rem($xxl); line-height: rem(66); }
+
+
 // Text Styles
 em { font-style: italic; }
 .tw-ultrabold{font-weight:900;}
@@ -75,7 +75,7 @@ strong { font-weight: 500; }
 small { font-size: 90%; }
 .light { font-weight: 300; }
 .thin { font-weight: 200; }
-.x-small{ font-size: 70%; }
+
 
 .tw-normal{ font-weight: 400; }
 .tw-light{ font-weight: 300; }
@@ -93,5 +93,11 @@ small { font-size: 90%; }
   }
 	&-text {
 		color: $text-blue;
+	}
+}
+
+.red {
+	&-link {
+		color: $link-red;
 	}
 }

@@ -1,6 +1,13 @@
 (function($) {
   $(".button-collapse").sideNav();
 
+  $('#next').on('click', function (){
+    $('.carousel').carousel('next');
+  })
+  $('#prev').on('click', function (){
+    $('.carousel').carousel('prev');
+  })
+
 
   if(window.innerWidth > 992) {
     $('.carousel').removeClass('carousel-slider')

@@ -5,6 +5,14 @@ nav {
   @media #{$large-and-up} {
     background-color: transparent;
   }
+  .material-icons {
+    color: $menu-blue; // TODO
+  }
+  .btn {
+    border-radius: 0;
+  }
+}
+.brand-logo {
   .icon-orb {
     color: $logo-blue; // TODO
     margin: 0;
@@ -23,17 +31,6 @@ nav {
       left: -25px;
       color: $logo-red; // TODO
       width: 52px;
-    }
-  }
-  .material-icons {
-    color: $menu-blue; // TODO
-  }
-  ul {
-    a {
-      // @extend .text-m;
-      &.btn {
-        // @extend .text-m;
-      }
     }
   }
   .tag-line {

@@ -58,6 +58,8 @@ $icon-blue: $bg-gradient1;
 $paragraph: #4A4A4A;
 $text-blue: $logo-blue;
 
+$link-red: #FF2859;
+
 // 2. Badges
 // ==========================================================================
 
@@ -303,19 +305,20 @@ $toast-text-color: #fff !default;
 
 $off-black: rgba(0, 0, 0, 0.87) !default;
 // Header Styles
-$baseFontSize : 16;
+$baseFontSize : 14;
 
-$h1-fontsize: 46;
-$h2-fontsize: 39;
-$h3-fontsize: 31;
-$h4-fontsize: 25;
+$h1-fontsize: 35;
+$h2-fontsize: 31;
+$h3-fontsize: 25;
+$h4-fontsize: 22;
 $h5-fontsize: 14;
 $h6-fontsize: 10;
 
-
-$medium: 21;
-$large: 50;
-$xl: 54;
+$small-x: 10px;
+$small: 16;
+$medium: 18;
+$large: 40;
+$xl: 45;
 $xxl: 50;
 
 

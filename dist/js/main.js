@@ -17,6 +17,13 @@ e.data("overlay-id",j).css("z-index",1e3+2*l+1),e.addClass("open"),a("body").app
 (function($) {
   $(".button-collapse").sideNav();
 
+  $('#next').on('click', function (){
+    $('.carousel').carousel('next');
+  })
+  $('#prev').on('click', function (){
+    $('.carousel').carousel('prev');
+  })
+
 
   if(window.innerWidth > 992) {
     $('.carousel').removeClass('carousel-slider')

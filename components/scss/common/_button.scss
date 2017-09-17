@@ -1,6 +1,5 @@
 
 .btn {
-  border-radius: 0;
   height: auto;
   &-circle {
     border-radius: 50%;
@@ -22,5 +21,15 @@
     border-radius: 40px;
     height: auto;
     padding: 20px;
+  }
+  &-large {
+    line-height: 54px !important;
+  }
+
+  &-block {
+    display: block;
+    @media #{$medium-and-up} {
+      display: inline-block;
+    }
   }
 }
