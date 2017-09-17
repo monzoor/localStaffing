@@ -1,15 +1,37 @@
 nav {
   background-color: #ffffff;
   position: relative;
-  z-index: 2;
   @media #{$large-and-up} {
     background-color: transparent;
+    z-index: 2;
+    ul {
+      li {
+        a {
+          line-height: 52px !important;
+          &.btn {
+            line-height: 37px !important;
+            display: block;
+            padding: 0 0 4px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
   }
   .material-icons {
     color: $menu-blue; // TODO
   }
   .btn {
     border-radius: 0;
+  }
+}
+.side-nav {
+  background: url("../images/bg.png") repeat, linear-gradient($bg-gradient1, $bg-gradient2) !important;
+  li {
+    > a {
+      @extend .text-m;
+      line-height: 48px;
+    }
   }
 }
 .brand-logo {
@@ -28,7 +50,7 @@ nav {
       font-size: 9px;
       position: relative;
       top: 14px;
-      left: -25px;
+      left: -21px;
       color: $logo-red; // TODO
       width: 52px;
     }

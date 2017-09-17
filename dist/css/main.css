@@ -9841,6 +9841,7 @@ h6,
 }
 
 .text-m,
+.side-nav li > a,
 .brand-logo .tag-line {
   font-size: 1.28571429rem;
   line-height: 1.85714286rem;
@@ -10986,12 +10987,24 @@ body {
 nav {
   background-color: #ffffff;
   position: relative;
-  z-index: 2;
 }
 
 @media only screen and (min-width: 993px) {
   nav {
     background-color: transparent;
+    z-index: 2;
+  }
+
+  nav ul li a {
+    line-height: 52px !important;
+  }
+
+  nav ul li a.btn,
+  nav ul li a.btn-large {
+    line-height: 37px !important;
+    display: block;
+    padding: 0 0 4px;
+    margin-top: 5px;
   }
 }
 
@@ -11002,6 +11015,15 @@ nav .material-icons {
 nav .btn,
 nav .btn-large {
   border-radius: 0;
+}
+
+.side-nav {
+  background: url(/images/bg.png?f6a6bc1c3c4bad3833b76337d11e7048) repeat, -webkit-gradient(linear, left top, left bottom, from(#124EC2), to(#003292)) !important;
+  background: url(/images/bg.png?f6a6bc1c3c4bad3833b76337d11e7048) repeat, linear-gradient(#124EC2, #003292) !important;
+}
+
+.side-nav li > a {
+  line-height: 48px;
 }
 
 .brand-logo .icon-orb {
@@ -11027,7 +11049,7 @@ nav .btn-large {
   font-size: 9px;
   position: relative;
   top: 14px;
-  left: -25px;
+  left: -21px;
   color: #FC3F73;
   width: 52px;
 }
@@ -11068,9 +11090,9 @@ nav .btn-large {
 @media only screen and (min-width: 993px) {
   .hero {
     height: 554px;
-    margin-top: -64px;
+    margin-top: -74px;
     padding-top: 64px;
-    background-image: url(/images/hero.png?cfc96107443c7ca2429163cec4b98d1b);
+    background-image: url(/images/hero.png?3eee93a42e50b044f402bdc62b065871);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top center;
@@ -11138,6 +11160,7 @@ nav .btn-large {
   text-transform: uppercase;
   font-size: 12px;
   padding: 10px;
+  letter-spacing: 2.7px;
 }
 
 .footer-nav .social {
