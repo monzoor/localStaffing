@@ -9,9 +9,9 @@
     border: 1px solid #ffffff;
   }
   &-bg-pink {
-    background-color: darken(color("pink", "accent-1"), 15.5%); //TODO
+    background-color: $btn-pink;
     &:hover {
-      background-color: darken(color("pink", "accent-1"), 15.5%);
+      background-color: $btn-pink;
     }
   }
   &-fixed {

@@ -3,6 +3,7 @@
 // Materialize CSS
 @import "node_modules/materialize-css/sass/materialize";
 @import "/common/variables";
+@import "/common/color";
 @import "/common/typography";
 @import "/common/sizers";
 @import "/common/globals";
@@ -15,5 +16,6 @@
 @import "/common/hero";
 @import "/common/footer";
 @import "/common/subscribe";
+@import "/common/carousel";
 // Pages
 @import "/pages/index";

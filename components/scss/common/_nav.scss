@@ -1,3 +1,8 @@
+/**********************
+*                     *
+*   Header            *
+*                     *
+***********************/
 nav {
   background-color: #ffffff;
   position: relative;
@@ -19,12 +24,13 @@ nav {
     }
   }
   .material-icons {
-    color: $menu-blue; // TODO
+    color: $text-blue-dark;
   }
   .btn {
     border-radius: 0;
   }
 }
+// Mobile nav
 .side-nav {
   background: url("../images/bg.png") repeat, linear-gradient($bg-gradient1, $bg-gradient2) !important;
   li {
@@ -34,13 +40,14 @@ nav {
     }
   }
 }
-.brand-logo {
 
+// Custom logo fron font icon
+.brand-logo {
   @media #{$large-and-up} {
     margin-top: -6px;
   }
   .icon-orb {
-    color: $logo-blue; // TODO
+    color: $logo-blue;
     margin: 0;
     @media #{$large-and-up} {
       color: #ffffff;
@@ -55,7 +62,7 @@ nav {
       position: relative;
       top: 14px;
       left: -21px;
-      color: $logo-red; // TODO
+      color: $logo-red;
       width: 52px;
     }
   }
@@ -66,7 +73,7 @@ nav {
     margin-top: 12px;
     &:before {
       content: '';
-      border-left: 2px solid white;
+      border-left: 2px solid #ffffff;
       height: 22px;
       display: inline-block;
       position: relative;

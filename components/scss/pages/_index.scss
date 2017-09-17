@@ -1,9 +1,10 @@
+// Create diagonal bg
 .diagonal {
   &-top {
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: transparent #F7F7F7; // TODO
+    border-color: $whitesmoke;
     border-width:  25px 100vw 0 0;
     @media #{$large-and-up} {
       border-width:  100px 100vw 0 0;
@@ -17,14 +18,16 @@
     }
   }
 }
+
+// Description
 .description {
-  background-color: #F7F7F7; // TODO
+  background-color: $whitesmoke;
   .img-wrapper {
     .border-left {
-      border-left: 5px solid blue;
+      border-left: 5px solid $border-blue;
     }
     .border-right {
-      border-right: 5px solid blue;
+      border-right: 5px solid $border-blue;
     }
   }
 
@@ -38,6 +41,7 @@
   }
 }
 
+// About us
 .about-us {
   position: relative;
   ul {
@@ -67,39 +71,11 @@
 .initialized {
   height: 490px !important
 }
-.carousel {
-  @media #{$large-and-up} {
-    overflow-x: hidden;
-    overflow-y: visible;
-  }
-  &-item{
-    margin-right: 5px;
-    @media #{$large-and-up} {
-      height: 450px !important;
-      width: 295px !important;
-    }
-    opacity: 1 !important;
-  }
-}
-.indicators {
-  @media #{$large-and-up} {
-    bottom: -20px !important;
-  }
-  .indicator-item {
-    @media #{$large-and-up} {
-      float: none;
-    }
-    background-color: #4F4F4F !important;
-    &.active {
-      background-color: #F93E72 !important;
-    }
-  }
-}
 
 .show-case {
-  background-color: #F7F7F7; // TODO
+  background-color: $whitesmoke;
 }
 
 .cta-create-resume {
-  background-color: #124EC2; // TODO
+  background-color: $bg-blue;
 }

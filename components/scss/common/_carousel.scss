@@ -1,0 +1,28 @@
+.carousel {
+  @media #{$large-and-up} {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+  &-item{
+    margin-right: 5px;
+    @media #{$large-and-up} {
+      height: 450px !important;
+      width: 295px !important;
+    }
+    opacity: 1 !important;
+  }
+}
+.indicators {
+  @media #{$large-and-up} {
+    bottom: -20px !important;
+  }
+  .indicator-item {
+    @media #{$large-and-up} {
+      float: none;
+    }
+    background-color: $bg-dark-gray !important;
+    &.active {
+      background-color: $bg-red !important;
+    }
+  }
+}

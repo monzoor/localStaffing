@@ -11044,6 +11044,12 @@ body {
   }
 }
 
+/**********************
+*                     *
+*   Header            *
+*                     *
+***********************/
+
 nav {
   background-color: #ffffff;
   position: relative;
@@ -11128,7 +11134,7 @@ nav .btn-large {
 
 .brand-logo .tag-line:before {
   content: '';
-  border-left: 2px solid white;
+  border-left: 2px solid #ffffff;
   height: 22px;
   display: inline-block;
   position: relative;
@@ -11194,7 +11200,7 @@ nav .btn-large {
 
 .footer-nav .links > li {
   width: 100%;
-  border-bottom: 1px solid #C2C2C2;
+  border-bottom: 1px solid #c2c2c2;
 }
 
 @media only screen and (min-width: 993px) {
@@ -11222,7 +11228,7 @@ nav .btn-large {
 }
 
 .footer-nav .links > li a {
-  color: #6C6C6C;
+  color: #6c6c6c;
   text-transform: uppercase;
   font-size: 12px;
   padding: 10px;
@@ -11316,7 +11322,7 @@ nav .btn-large {
 }
 
 .legal {
-  background-color: #F7F7F7;
+  background-color: whitesmoke;
   padding: 20px 0;
 }
 
@@ -11348,7 +11354,7 @@ nav .btn-large {
 }
 
 .subscribe {
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 
 .subscribe form {
@@ -11394,12 +11400,51 @@ nav .btn-large {
   line-height: 18px;
 }
 
+@media only screen and (min-width: 993px) {
+  .carousel {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+}
+
+.carousel-item {
+  margin-right: 5px;
+  opacity: 1 !important;
+}
+
+@media only screen and (min-width: 993px) {
+  .carousel-item {
+    height: 450px !important;
+    width: 295px !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .indicators {
+    bottom: -20px !important;
+  }
+}
+
+.indicators .indicator-item {
+  background-color: #4f4f4f !important;
+}
+
+@media only screen and (min-width: 993px) {
+  .indicators .indicator-item {
+    float: none;
+  }
+}
+
+.indicators .indicator-item.active {
+  background-color: #F93E72 !important;
+}
+
 .diagonal-top,
 .diagonal-bottom {
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: transparent #F7F7F7;
+  border-color: whitesmoke;
   border-width: 25px 100vw 0 0;
 }
 
@@ -11421,15 +11466,15 @@ nav .btn-large {
 }
 
 .description {
-  background-color: #F7F7F7;
+  background-color: whitesmoke;
 }
 
 .description .img-wrapper .border-left {
-  border-left: 5px solid blue;
+  border-left: 5px solid #0841BE;
 }
 
 .description .img-wrapper .border-right {
-  border-right: 5px solid blue;
+  border-right: 5px solid #0841BE;
 }
 
 @media only screen and (max-width: 600px) {
@@ -11502,47 +11547,8 @@ nav .btn-large {
   height: 490px !important;
 }
 
-@media only screen and (min-width: 993px) {
-  .carousel {
-    overflow-x: hidden;
-    overflow-y: visible;
-  }
-}
-
-.carousel-item {
-  margin-right: 5px;
-  opacity: 1 !important;
-}
-
-@media only screen and (min-width: 993px) {
-  .carousel-item {
-    height: 450px !important;
-    width: 295px !important;
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  .indicators {
-    bottom: -20px !important;
-  }
-}
-
-.indicators .indicator-item {
-  background-color: #4F4F4F !important;
-}
-
-@media only screen and (min-width: 993px) {
-  .indicators .indicator-item {
-    float: none;
-  }
-}
-
-.indicators .indicator-item.active {
-  background-color: #F93E72 !important;
-}
-
 .show-case {
-  background-color: #F7F7F7;
+  background-color: whitesmoke;
 }
 
 .cta-create-resume {

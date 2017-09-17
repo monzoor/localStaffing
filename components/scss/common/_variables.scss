@@ -43,22 +43,6 @@ $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
 
-// TODO
-$logo-blue: #0841BE;
-$logo-red:  #FC3F73;
-
-$menu-blue: #124EC2;
-
-$bg-gradient1: #124EC2;
-$bg-gradient2: #003292;
-
-$icon-blue: $bg-gradient1;
-
-// font color
-$paragraph: #4A4A4A;
-$text-blue: $logo-blue;
-
-$link-red: #FF2859;
 
 // 2. Badges
 // ==========================================================================
@@ -160,7 +144,7 @@ $dropdown-item-height: 50px !default;
 // 9. Fonts
 // ==========================================================================
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
-// $roboto-font-path: "../fonts/roboto/" !default; //TODO
+$roboto-font-path: "../fonts/roboto/" !default;
 $font-family: 'Lato', sans-serif;
 
 

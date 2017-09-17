@@ -1,3 +1,4 @@
+// mixins
 @mixin clearfix() {
   &:before,
   &:after {
@@ -9,6 +10,7 @@
   }
 }
 
+// =========================
 body {
   line-height: 1.4em;
 	background-color: white;
@@ -16,7 +18,6 @@ body {
   // To facilitate consistent footer positioning
   min-height: 100vh;
   position: relative;
-  // margin-top: 30px;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,6 +29,9 @@ body {
 * a {
   display: block;
 }
+
+
+// Row and container
 .row{
 	margin-bottom: 0px;
 	padding:0px;
